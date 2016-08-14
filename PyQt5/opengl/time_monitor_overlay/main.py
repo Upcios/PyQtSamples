@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
-from PyQt5 import QtWidgets, QtGui
+from PyQt5 import QtCore, QtWidgets, QtGui
 import numpy
 
 class MyOpenGLWindow( QtGui.QOpenGLWindow ):
@@ -9,9 +9,14 @@ class MyOpenGLWindow( QtGui.QOpenGLWindow ):
         super().__init__()
         self.profile = QtGui.QOpenGLVersionProfile()
         self.profile.setVersion( 2, 1 )
+        self.opengl_paint_device = None
+        self.render_stages = [ "Clear Buffer", "VAO Binding", "Shader Program Binding", "Drawing" ]
 
     def initializeGL( self ):
         self.gl = self.context().versionFunctions( self.profile )
+        self.time_monitor = QtGui.QOpenGLTimeMonitor( self )
+        self.time_monitor.setSampleCount( 5 )
+        self.time_monitor.create()
         self.vao = QtGui.QOpenGLVertexArrayObject( self )
         self.vao.create()
 
@@ -34,13 +39,33 @@ class MyOpenGLWindow( QtGui.QOpenGLWindow ):
         self.program.release()
 
     def paintGL( self ):
+        self.time_monitor.recordSample()
+        self.gl.glClear( self.gl.GL_COLOR_BUFFER_BIT )
+        self.time_monitor.recordSample()
         self.program.bind()
-
+        self.time_monitor.recordSample()
         self.vao.bind()
+        self.time_monitor.recordSample()
         self.gl.glDrawArrays( self.gl.GL_TRIANGLES, 0, 3 )
-        self.vao.release()
+        self.time_monitor.recordSample()
 
+        self.vao.release()
         self.program.release()
+
+    def paintOverGL( self ):
+        if self.opengl_paint_device == None:
+            self.opengl_paint_device = QtGui.QOpenGLPaintDevice( self.size() )
+
+        self.time_monitor.waitForSamples()
+        intervals = self.time_monitor.waitForIntervals()
+
+        painter = QtGui.QPainter( self.opengl_paint_device )
+        painter.setPen( QtCore.Qt.white )
+        painter.setFont( QtGui.QFont( "Helvetica", 10 ) )
+        for i in range( 0, len( intervals ) ):
+            painter.drawText( 10, (i+1)*25, self.render_stages[i]+": "+str( intervals[i] / 1.0e6 )+" msecs" )
+        self.time_monitor.reset()
+        self.requestUpdate() # animation
 
     def setVertexBuffer( self, data_array, dim_vertex, program, shader_str ):
         vbo = QtGui.QOpenGLBuffer( QtGui.QOpenGLBuffer.VertexBuffer )
