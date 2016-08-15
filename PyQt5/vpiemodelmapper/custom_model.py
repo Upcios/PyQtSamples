@@ -7,24 +7,14 @@ class CustomModel( QtCore.QAbstractTableModel ):
     def __init__( self, parent=None ):
         super().__init__( parent )
 
-        self.column_count = 4
-        self.row_count = 15
+        self.column_count = 2
+        self.row_count = 4
         self.data = [
-            [ 19, 73, 16, 92 ],
-            [ 68, 62, 58, 76 ],
-            [ 115, 14, 111, 18 ],
-            [ 153, 45, 165, 16 ],
-            [ 217, 39, 207, 61 ],
-            [ 265, 53, 255, 68 ],
-            [ 302, 52, 312, 81 ],
-            [ 360, 4, 364, 48 ],
-            [ 419, 72, 416, 8 ],
-            [ 458, 66, 466, 4 ],
-            [ 502, 78, 515, 0 ],
-            [ 558, 14, 553, 54 ],
-            [ 616, 53, 606, 22 ],
-            [ 657, 80, 661, 95 ],
-            [ 700, 24, 704, 7 ]
+            [ "Volkswagen", 13.5 ],
+            [ "Toyota", 10.9 ],
+            [ "Ford", 8.6 ],
+            [ "Skoda", 8.2 ],
+            [ "Volvo", 6.8 ]
         ]
 
     def rowCount( self, parent ):
