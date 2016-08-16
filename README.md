@@ -44,27 +44,27 @@ In this repository, each subfolder represents a standalone project and you can o
 <img src="./Screenshots/qt_creator_run_settings.png" alt="Qt Creator run settings">
 
 # Examples
-## [VXYModelMapper](PyQt5\vxymodelmapper/)
+## [VXYModelMapper](PyQt5/vxymodelmapper/)
 <img src="./Screenshots/line_series.png" height="96px" align="right">
 This QML example shows how to use a VXYModelMapper, to bind a QAbstractTableModel (python side) with a LineSeries (QML side).
 <br><br>
 
-## [VBarModelMapper](PyQt5\vbarmodelmapper/)
+## [VBarModelMapper](PyQt5/vbarmodelmapper/)
 <img src="./Screenshots/bar_series.png" height="96px" align="right">
 This QML example shows how to use a VBarModelMapper, to bind a QAbstractTableModel (python side) with a BarSeries (QML side).
 <br><br>
 
-## [HBarModelMapper](PyQt5\hbarmodelmapper/)
+## [HBarModelMapper](PyQt5/hbarmodelmapper/)
 <img src="./Screenshots/bar_series.png" height="96px" align="right">
 This QML example shows how to use a HBarModelMapper, to bind a QAbstractTableModel (python side) with a BarSeries (QML side).
 <br><br>
 
-## [VPieModelMapper](PyQt5\vpiemodelmapper/)
+## [VPieModelMapper](PyQt5/vpiemodelmapper/)
 <img src="./Screenshots/pie_series.png" height="96px" align="right">
 This QML example shows how to use a VPieModelMapper, to bind a QAbstractTableModel (python side) with a PieSeries (QML side).
 <br><br>
 
-## [VBoxPlotModelMapper](PyQt5\vboxplotmodelmapper/)
+## [VBoxPlotModelMapper](PyQt5/vboxplotmodelmapper/)
 <img src="./Screenshots/box_plot_series.png" height="96px" align="right">
 This QML example shows how to use a VBoxPlotModelMapper, to bind a QAbstractTableModel (python side) with a BoxPlotSeries (QML side).
 <br><br>
