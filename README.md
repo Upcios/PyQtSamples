@@ -69,6 +69,11 @@ This QML example shows how to use a HBarModelMapper, to bind a QAbstractTableMod
 This QML example shows how to use a VPieModelMapper, to bind a QAbstractTableModel (python side) with a PieSeries (QML side).
 <br><br>
 
+## [HPieModelMapper](PyQt5/hpiemodelmapper/)
+<img src="./Screenshots/pie_series.png" height="96px" align="right">
+This QML example shows how to use a HPieModelMapper, to bind a QAbstractTableModel (python side) with a PieSeries (QML side).
+<br><br>
+
 ## [VBoxPlotModelMapper](PyQt5/vboxplotmodelmapper/)
 <img src="./Screenshots/box_plot_series.png" height="96px" align="right">
 This QML example shows how to use a VBoxPlotModelMapper, to bind a QAbstractTableModel (python side) with a BoxPlotSeries (QML side).
