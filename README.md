@@ -49,6 +49,11 @@ In this repository, each subfolder represents a standalone project and you can o
 This QML example shows how to use a VXYModelMapper, to bind a QAbstractTableModel (python side) with a LineSeries (QML side).
 <br><br>
 
+## [HXYModelMapper](PyQt5/hxymodelmapper/)
+<img src="./Screenshots/line_series.png" height="96px" align="right">
+This QML example shows how to use a HXYModelMapper, to bind a QAbstractTableModel (python side) with a LineSeries (QML side).
+<br><br>
+
 ## [VBarModelMapper](PyQt5/vbarmodelmapper/)
 <img src="./Screenshots/bar_series.png" height="96px" align="right">
 This QML example shows how to use a VBarModelMapper, to bind a QAbstractTableModel (python side) with a BarSeries (QML side).
