@@ -84,6 +84,11 @@ This QML example shows how to use a VBoxPlotModelMapper, to bind a QAbstractTabl
 Renders a colored triangle in a QOpenGLWindow, using a QOpenGLVertexArrayObject.
 <br><br>
 
+## [Textured Quad](PyQt5/opengl/textured_quad/)
+<img src="./Screenshots/fbo_texture.png" height="96px" align="right">
+Renders a textured quad in a QOpenGLWindow, using a QOpenGLTexture.
+<br><br>
+
 ## [Time Monitor Overlay](PyQt5/opengl/time_monitor_overlay/)
 <img src="./Screenshots/time_monitor_overlay.png" height="96px" align="right">
 Show how to use a QOpenGLTimeMonitor object. In addition, this example shows how to render a 2D text overlay on top of an existing OpenGL scene. Here we display the QOpenGLTimeMonitor output.
