@@ -94,6 +94,12 @@ Renders a textured quad in a QOpenGLWindow, using a QOpenGLTexture.
 Show how to use a QOpenGLTimeMonitor object. In addition, this example shows how to render a 2D text overlay on top of an existing OpenGL scene. Here we display the QOpenGLTimeMonitor output.
 <br><br>
 
+## [QOffscreenSurface](PyQt5/opengl/qoffscreensurface/)
+<img src="./Screenshots/julia.png" height="96px" align="right">
+This sample shows how to use a QOffscreenSurface. We use also a QOpenGLWindow to display result of the QOffscreenSurface rendering.
+Here we have only one thread and two shared QOpenGLContext.
+<br><br>
+
 ## [FBO Texture](PyQt5/opengl/fbo_texture/)
 <img src="./Screenshots/fbo_texture.png" height="96px" align="right">
 Renders a textured quad with an offscreen pass (using QOpenGLFramebufferObject). With a mouse click we display the framebuffer content.

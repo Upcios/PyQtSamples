@@ -33,7 +33,7 @@ class MyOpenGLWindow( QtGui.QOpenGLWindow ):
 
         # offscreen render
         self.vao_offscreen.bind()
-        self.vertices = [ 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0 ]#[0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.5, 1.0, 0.0]
+        self.vertices = [ 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0 ]
         self.vbo_vertices = self.setVertexBuffer( self.vertices, 3, self.program, "position" )
         self.tex = [ 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 1.0 ]
         self.vbo_tex = self.setVertexBuffer( self.tex, 2, self.program, "texCoord" )

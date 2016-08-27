@@ -13,7 +13,6 @@ class MyOpenGLWindow( QtGui.QOpenGLWindow ):
 
     def initializeGL( self ):
         self.gl = self.context().versionFunctions( self.profile )
-        self.fbo = QtGui.QOpenGLFramebufferObject( self.image.width(), self.image.height() )
         self.vao_offscreen = QtGui.QOpenGLVertexArrayObject( self )
         self.vao_offscreen.create()
         self.vao = QtGui.QOpenGLVertexArrayObject( self )
