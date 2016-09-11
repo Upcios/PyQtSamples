@@ -79,6 +79,11 @@ This QML example shows how to use a HPieModelMapper, to bind a QAbstractTableMod
 This QML example shows how to use a VBoxPlotModelMapper, to bind a QAbstractTableModel (python side) with a BoxPlotSeries (QML side).
 <br><br>
 
+## [DonutChartBreakdown](PyQt5/donut_chart_breakdown/)
+<img src="./Screenshots/donut_chart_breakdown.png" height="96px" align="right">
+This QML example shows how to generate a donut chart, thanks to multiple PieSeries in a ChartView.
+<br><br>
+
 ## [Triangle Simple](PyQt5/opengl/triangle_simple/)
 <img src="./Screenshots/triangle_simple.png" height="96px" align="right">
 Renders a colored triangle in a QOpenGLWindow, using a QOpenGLVertexArrayObject.
