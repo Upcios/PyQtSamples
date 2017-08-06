@@ -49,6 +49,11 @@ In this repository, each subfolder represents a standalone project and you can o
 The Painted Item example shows how to use the QML Scene Graph framework to implement custom scenegraph items using QPainter.
 <br><br>
 
+## [OpenGL Under QML](PyQt5/opengl/opengl_under_qml/)
+<img src="./Screenshots/opengl_under_qml.png" height="96px" align="right">
+The OpenGL under QML example shows how an application can draw custom OpenGL content under a Qt Quick scene.
+<br><br>
+
 ## [VXYModelMapper](PyQt5/vxymodelmapper/)
 <img src="./Screenshots/line_series.png" height="96px" align="right">
 This QML example shows how to use a VXYModelMapper, to bind a QAbstractTableModel (python side) with a LineSeries (QML side).
