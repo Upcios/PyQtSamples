@@ -44,6 +44,11 @@ In this repository, each subfolder represents a standalone project and you can o
 <img src="./Screenshots/qt_creator_run_settings.png" alt="Qt Creator run settings">
 
 # Examples
+## [QML Painted Item](PyQt5/qml_painted_item/)
+<img src="./Screenshots/qml_painted_item.png" height="96px" align="right">
+The Painted Item example shows how to use the QML Scene Graph framework to implement custom scenegraph items using QPainter.
+<br><br>
+
 ## [VXYModelMapper](PyQt5/vxymodelmapper/)
 <img src="./Screenshots/line_series.png" height="96px" align="right">
 This QML example shows how to use a VXYModelMapper, to bind a QAbstractTableModel (python side) with a LineSeries (QML side).
