@@ -54,6 +54,12 @@ The Painted Item example shows how to use the QML Scene Graph framework to imple
 The OpenGL under QML example shows how an application can draw custom OpenGL content under a Qt Quick scene.
 <br><br>
 
+## [OpenGL Under QML With FBO](PyQt5/opengl/opengl_under_qml_fbo/)
+<img src="./Screenshots/opengl_under_qml_fbo.png" height="96px" align="right">
+The OpenGL under QML example shows how an application can draw custom OpenGL on the scene graph rendering thread. Here we use a FBO, managed and displayed using the QQuickFramebufferObject convenience class.
+Compare to the previous method, this one is more flexible.
+<br><br>
+
 ## [VXYModelMapper](PyQt5/vxymodelmapper/)
 <img src="./Screenshots/line_series.png" height="96px" align="right">
 This QML example shows how to use a VXYModelMapper, to bind a QAbstractTableModel (python side) with a LineSeries (QML side).

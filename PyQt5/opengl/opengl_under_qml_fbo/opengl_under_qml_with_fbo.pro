@@ -11,7 +11,8 @@ QML_IMPORT_PATH =
 
 DISTFILES += \
     *.py \
-    squircle_renderer.py
+    squircle_renderer.py \
+    squircle.py
 
 OTHER_FILES += \
     *.qml
